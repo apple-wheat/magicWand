@@ -1,0 +1,117 @@
+/*当前访问人数*/
+.brand_news {
+    position: relative;
+    height: 850px;
+}
+.brand_news button{
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    background-color:  #0085ca;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    left: 35%;
+    margin-top: 3%;
+    margin-left: 20px;
+}
+h2{
+    color:  #0085ca;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: -8%;
+    margin-left: -85px;
+}
+b{
+    font-size: 16px;
+    color:  #0085ca;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 400;
+}
+#page_views {
+    width: 100%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+.bview1{
+    font-size: 20px;
+}
+
+.checkcode a{
+    color: #5CA8E3;
+    font-size: 12px;
+    margin-left: 120px;
+    cursor: hand;
+}
+
+.bview1,.bview2,.bview3,.bview4,.bview5{
+    font-size: 14px;
+    margin-top: 15px;
+}
+.bview2 input{
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid  #98d1ef;
+    padding-left: 8px;
+}
+.bview3 select{
+    width: 400px;
+    height: 30px;
+    border: 1px solid  #98d1ef;
+    padding-left: 8px;
+}
+.bview4 button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color:  #0085ca;
+    color: white;
+    font-size: 14px;
+    margin: 5px 40px;
+}
+.bview5 button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color:  #0085ca;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    margin-left: 75%;
+    margin-top: -6%;
+}
+.bview4 input{
+     width: 400px;
+     height: 30px;
+     line-height: 30px;
+     border: 1px solid  #98d1ef;
+     padding-left: 8px;
+ }
+
+/*错误提示*/
+.nametips,.urltips{
+    font-size: 12px;
+    color: indianred;
+    margin-left: 30px;
+}
+#keyword{
+    color:red;
+}
+#pid{
+    width: 580px;
+    height: 120px;
+    line-height: 30px;
+    border: 1px solid  #98d1ef;
+    padding-left: 8px;
+}
+
+
+
+
+
+
+

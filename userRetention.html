@@ -1,0 +1,76 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/init.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/userRetention.css">
+<script src="js/getPath.js"></script>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/verificationLogin.js"></script>
+
+
+<!--条件筛选-->
+<div class="brand_news">
+    <span class="left-line"></span>
+    <div class="select">
+        <ul>
+            <li class="view1">
+                <span><b>项目名称:</b></span>
+                <select name="" id="projectid"></select>
+            </li>
+            <li class="view2">
+                <span><b>起始时间:</b></span>
+                <input class="laydate-icon" id="chsDate" readonly>
+            </li>
+            <li class="view7">
+                <span><b>来源渠道:</b></span>
+                <select id="channel">
+                    <option value="">全部</option>
+                </select>
+            </li>
+            <li class="view6">
+                <span><b>设备类型：</b></span>
+                <label for="alldev"><input type="radio" id="alldev" name="device" value="" checked>&nbsp;全部&emsp;</label>
+                <label for="pc"><input type="radio" id="pc" name="device" value="1">&nbsp;PC&emsp;</label>
+                <label for="mobile"><input type="radio" id="mobile"name="device" value="2">&nbsp;移动设备&emsp;</label>&emsp;&emsp;
+                <button id="click">确&emsp;定</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--用户7日留存率-->
+<div class="main-item">
+    <div class="title">
+        <span class="left-line-t"></span>
+        <h3>用户7日留存率</h3>
+    </div>
+    <div class="brand_total">
+        <table id="usersave">
+            <thead>
+            <tr>
+                <th>日期</th>
+                <th>当日</th>
+                <th>次日</th>
+                <th>第三日</th>
+                <th>第四日</th>
+                <th>第五日</th>
+                <th>第六日</th>
+                <th>第七日</th>
+            </tr>
+            <tr id="head1"></tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+
+<script src="laydate/laydate.js"></script>
+<script src="js/normaltime.js"></script>
+<script src="js/common.js"></script>
+<script src="js/userRetention.js"></script>
+
+
+
+
+
+
+

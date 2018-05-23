@@ -1,0 +1,111 @@
+/*当前访问人数*/
+.brand_news {
+    position: relative;
+    height: 480px;
+}
+.brand_news button{
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    background-color:  #0085ca;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    left: 38%;
+    margin-top: 5%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.brand_news button:hover{
+    border: 1px solid #98d1ef;
+    background-color: white;
+    color: #0085ca;
+}
+span b{
+    color:  #0085ca;
+    font-size: 14px;
+}
+#page_views {
+    width: 100%;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+#page_views li{
+    line-height: 30px;
+}
+.pview1 b{
+    font-size: 20px;
+    margin-left: 32%;
+    display: block;
+    width: 300px;
+}
+
+.checkcode a{
+    color: #5CA8E3;
+    font-size: 12px;
+    margin-left: 120px;
+    cursor: hand;
+}
+
+.pview2,.pview3,.pview4{
+    font-size: 14px;
+    margin-top: 15px;
+}
+.pview2 input{
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid  #98d1ef;
+    padding-left: 8px;
+}
+.pview3 select{
+    width: 400px;
+    height: 30px;
+    padding-left: 8px;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    line-height: 30px;
+    font-size: 14px;
+    border: 1px solid  #98d1ef;
+    margin-right: 20px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.pview1 input,.pview4 input{
+    width: 400px;
+    height: 30px;
+    border: 1px solid  #98d1ef;
+    line-height: 30px;
+    padding-left: 8px;
+}
+
+#page_views .info{
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 36px;
+    bottom: -162px;
+    box-sizing: border-box;
+    color: #f00;
+    float: left;
+}
+
+/*操作提示*/
+.nametips,.urltips{
+    font-size: 12px;
+    color: indianred;
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+

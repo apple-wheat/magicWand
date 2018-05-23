@@ -1,0 +1,151 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/init.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/addTask.css">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/getPath.js"></script>
+<script src="js/verificationLogin.js"></script>
+
+<!--项目选择-->
+<div id="select" class="clearfix">
+    <span class="left-line"></span>
+    <div class="se_content">
+        <span>项目选择：</span>
+        <select name="" id="projectid"></select>
+    </div>
+</div>
+
+<!--任务名称-->
+<div class="main-item clearfix">
+    <div class="title">
+        <span class="left-line-t"></span>
+        <h3>任务名称：</h3>
+        <input class="taskname" type="text" value="" placeholder="请输入任务名称">
+        <span class="tips">*必填项</span>
+    </div>
+</div>
+<!--营销方式-->
+<div class="main-item clearfix">
+    <div class="title">
+        <span class="left-line-t"></span>
+        <h3>营销方式：</h3>
+        <label for="msg"><input type="radio" id="msg" name="type" value="1" checked>&nbsp;短信&nbsp;</label>
+        <label for="call"><input type="radio" id="call" name="type" value="2">&nbsp;外呼&nbsp;</label>
+    </div>
+</div>
+
+<!--基础属性-->
+<div class="main-item clearfix">
+    <div class="title">
+        <span class="left-line-t"></span>
+        <h3>基础属性</h3>
+    </div>
+    <ul class="brand_total">
+        <li>
+            <span>性别：</span>
+            <label for="sex_all"><input type="checkbox" id="sex_all" value="">全部&emsp;</label>
+            <label for="sex_male"><input type="checkbox" id="sex_male" value="1" name="sex">男&emsp;</label>
+            <label for="sex_female"><input type="checkbox" id="sex_female" value="2" name="sex">女</label>
+        </li>
+        <li>
+            <span>年龄：</span>
+            <label for="age_all"><input type="checkbox" id="age_all" value="">全部&emsp;</label>
+            <label for="age_18"><input type="checkbox" id="age_18" value="<18" name="age">18岁以下&emsp;</label>
+            <label for="age_25"><input type="checkbox" id="age_25" value="18-25" name="age">18-25&emsp;</label>
+            <label for="age_30"><input type="checkbox" id="age_30" value="26-30" name="age">26-30&emsp;</label>
+            <label for="age_35"><input type="checkbox" id="age_35" value="31-35" name="age">31-35&emsp;</label>
+            <label for="age_40"><input type="checkbox" id="age_40" value="36-40" name="age">36-40&emsp;</label>
+            <label for="age_45"><input type="checkbox" id="age_45" value="42-45" name="age">41-45&emsp;</label>
+            <label for="age_50"><input type="checkbox" id="age_50" value="46-50" name="age">46-50&emsp;</label>
+            <label for="age_60"><input type="checkbox" id="age_60" value=">50" name="age">50岁以上</label>
+        </li>
+    </ul>
+</div>
+
+<!--地域分布-->
+<div class="main-item  clearfix">
+    <div class="title">
+        <span class="left-line-t"></span>
+        <h3>地域分布</h3>
+    </div>
+    <ul class="brand_area">
+        <li>
+            <span>归属省份：</span>
+            <label for="area_all"><input type="checkbox" id="area_all" value="全部">全部&emsp;</label>
+            <label for="area_bj"><input type="checkbox" id="area_bj" value="北京" name="area">北京&emsp;</label>
+            <label for="area_ah"><input type="checkbox" id="area_ah" value="安徽" name="area">安徽&emsp;</label>
+            <label for="area_cq"><input type="checkbox" id="area_cq" value="重庆" name="area">重庆&emsp;</label>
+            <label for="area_fj"><input type="checkbox" id="area_fj" value="福建" name="area">福建&emsp;</label>
+            <label for="area_gd"><input type="checkbox" id="area_gd" value="广东" name="area">广东&emsp;</label>
+            <label for="area_gs"><input type="checkbox" id="area_gs" value="甘肃" name="area">甘肃&emsp;</label>
+            <label for="area_gx"><input type="checkbox" id="area_gx" value="广西" name="area">广西&emsp;</label>
+            <label for="area_gz"><input type="checkbox" id="area_gz" value="贵州" name="area">贵州&emsp;</label>
+            <label for="area_hb"><input type="checkbox" id="area_hb" value="湖北" name="area">湖北&emsp;</label>
+            <label for="area_hn"><input type="checkbox" id="area_hn" value="湖南" name="area">湖南&emsp;</label>
+            <label for="area_hbe"><input type="checkbox" id="area_hbe" value="河北" name="area">河北&emsp;</label>
+            <label for="area_hna"><input type="checkbox" id="area_hna" value="河南" name="area">河南&emsp;</label>
+            <label for="area_hnan"><input type="checkbox" id="area_hnan" value="海南" name="area">海南&emsp;</label>
+            <label for="area_hlj"><input type="checkbox" id="area_hlj" value="黑龙江" name="area">黑龙江&emsp;</label>
+            <label for="area_js"><input type="checkbox" id="area_js" value="江苏" name="area">江苏&emsp;</label>
+            <label for="area_jl"><input type="checkbox" id="area_jl" value="吉林" name="area">吉林&emsp;</label><br>&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label for="area_jx"><input type="checkbox" id="area_jx" value="江西" name="area">江西&emsp;</label>
+            <label for="area_ln"><input type="checkbox" id="area_ln" value="辽宁" name="area">辽宁&emsp;</label>
+            <label for="area_nmg"><input type="checkbox" id="area_nmg" value="内蒙古" name="area">内蒙古&emsp;</label>
+            <label for="area_nx"><input type="checkbox" id="area_nx" value="宁夏" name="area">宁夏&emsp;</label>
+            <label for="area_qh"><input type="checkbox" id="area_qh" value="青海" name="area">青海&emsp;</label>
+            <label for="area_sd"><input type="checkbox" id="area_sd" value="山东" name="area">山东&emsp;</label>
+            <label for="area_sh"><input type="checkbox" id="area_sh" value="上海" name="area">上海&emsp;</label>
+            <label for="area_sx"><input type="checkbox" id="area_sx" value="山西" name="area">山西&emsp;</label>
+            <label for="area_sxi"><input type="checkbox" id="area_sxi" value="陕西" name="area">陕西&emsp;</label>
+            <label for="area_sc"><input type="checkbox" id="area_sc" value="四川" name="area">四川&emsp;</label>
+            <label for="area_tj"><input type="checkbox" id="area_tj" value="天津" name="area">天津&emsp;</label>
+            <label for="area_xj"><input type="checkbox" id="area_xj" value="新疆" name="area">新疆&emsp;</label>
+            <label for="area_xz"><input type="checkbox" id="area_xz" value="西藏" name="area">西藏&emsp;</label>
+            <label for="area_yn"><input type="checkbox" id="area_yn" value="云南" name="area">云南&emsp;</label>
+            <label for="area_zj"><input type="checkbox" id="area_zj" value="浙江" name="area">浙江&emsp;</label>
+            <label for="area_xg"><input type="checkbox" id="area_xg" value="香港" name="area">香港&emsp;</label>
+        </li>
+    </ul>
+
+</div>
+
+<!--行为特征-->
+<div class="main-item  clearfix">
+    <div class="title">
+        <span class="left-line-t"></span>
+        <h3>行为特征</h3>
+    </div>
+    <ul class="brand_behave">
+        <li>
+            <span>访问次数：</span>
+            <label for="times_all"><input type="checkbox" id="times_all" value="">全部&emsp;</label>
+            <label for="times_1"><input type="checkbox" id="times_1" value="1" name="times">1次&emsp;</label>
+            <label for="times_2"><input type="checkbox" id="times_2" value="2-3" name="times">2-3次&emsp;</label>
+            <label for="times_3"><input type="checkbox" id="times_3" value=">3" name="times">3次以上</label>
+        </li>
+        <li>
+            <span>访问时长：</span>
+            <label for="duration_all"><input type="checkbox" id="duration_all" value="">全部&emsp;</label>
+            <label for="duration_1"><input type="checkbox" id="duration_1" value="1-10" name="duration">1-10秒&emsp;</label>
+            <label for="duration_11"><input type="checkbox" id="duration_11" value="11-30" name="duration">11-30秒&emsp;</label>
+            <label for="duration_30"><input type="checkbox" id="duration_30" value="30-60" name="duration">30-60秒&emsp;</label>
+            <label for="duration_60"><input type="checkbox" id="duration_60" value=">60" name="duration">1分钟以上</label>
+        </li>
+    </ul>
+</div>
+
+<button id="savetsk">创建任务</button>
+<button id="backtsk">返&emsp;回</button>
+
+<script src="js/common.js"></script>
+<script src="js/echarts.js"></script>
+<script src="js/china.js"></script>
+<script src="js/addTask.js"></script>
+
+
+
+
+

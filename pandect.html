@@ -1,0 +1,171 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/init.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/pandect.css">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/getPath.js"></script>
+<script src="js/verificationLogin.js"></script>
+
+<!--项目选择-->
+<div id="select" class="clearfix">
+    <span class="left-line"></span>
+    <div class="se_content">
+        <span>项目选择：</span>
+        <select name="" id="projectid"></select>
+    </div>
+</div>
+
+<!--当前访问人数-->
+<div class="main-item clearfix">
+    <div class="title">
+        <span class="left-line-t"></span>
+        <h3>今日流量</h3>
+    </div>
+    <div class="brand_news item-open">
+        <table id="page_views" border="1" cellspacing="0" cellpadding="0"></table>
+        <div class="data_none">该时间段内无新增信息!</div>
+    </div>
+</div>
+
+<!--趋势图-->
+<div class="main-item clearfix">
+    <div class="title">
+        <span class="left-line-t"></span>
+        <h3>指标变化趋势</h3>
+    </div>
+    <div class="brand_total">
+        <ul>
+            <li>
+                <select name="" id="trends">
+                    <option value="PV" selected>PV</option>
+                    <option value="UV">UV</option>
+                    <option value="IP">独立IP</option>
+                    <option value="AVG">平均访问时长</option>
+                    <option value="NEW">新增用户数</option>
+                </select>&emsp;
+                <label for="treday">
+                    <input type="radio" name="trend" id="treday" value="day"/>&nbsp;今日&emsp;
+                </label>
+                <label for="treother">
+                    <input type="radio" name="trend" id="treother" value="other" checked>&nbsp;近30日&emsp;&emsp;&emsp;
+                </label>
+                <span class="trend_x">横轴指标：今示时刻（单位：每小时）</span>&emsp;&emsp;<span class="trend_y">纵轴指标：页面访问次数（单位：次）</span>
+            </li>
+        </ul>
+        <div id="volume-content"></div>
+        <div class="data_none">该时间段内无新增信息!</div>
+    </div>
+</div>
+
+<!--使用时段分布-->
+<div class="main-item  clearfix">
+    <div class="title">
+        <span class="left-line-t"></span>
+        <h3>使用时段分布</h3>
+    </div>
+    <div class="brand_total">
+        <span class="totaltime">横轴指标：显示时刻（单位：每小时）&emsp;&emsp;&emsp;纵轴指标：平均用户数量(单位：人)</span>
+        <div id="usertime"></div>
+        <div class="data_none2">该时间段内无新增信息!</div>
+    </div>
+</div>
+
+<!--图表展示-->
+<div class="main clearfix">
+    <!--左侧图表-->
+    <div class="main-left fl">
+        <!--地域分布-->
+        <div class="main-item clearfix">
+            <div class="title">
+                <span class="left-line-t"></span>
+                <h3>用户地域分布</h3>
+            </div>
+            <div class="area">
+                <ul>
+                    <li>
+                        <label for="areday">
+                            <input type="radio" name="area" id="areday" value="day">&nbsp;今日&emsp;
+                        </label>
+                        <label for="areweek">
+                            <input type="radio" name="area" id="areweek" value="week" checked>&nbsp;近7日&emsp;
+                        </label>
+                        <label for="aremonth">
+                            <input type="radio" name="area" id="aremonth" value="month">&nbsp;近30日
+                        </label>
+                        <span class="area-con">展示指标：PV（页面浏览次数）</span>
+                    </li>
+                </ul>
+                <div id="area_dis"></div>
+                <div class="data_none">该时间段内无新增信息!</div>
+            </div>
+        </div>
+        <!--页面访问-->
+        <div class="main-item clearfix">
+            <div class="title">
+                <span class="left-line-t"></span>
+                <h3>页面访问</h3>
+            </div>
+            <div class="brand_event item-open">
+                <table id="page_display"></table>
+                <div class="data_none">该时间段内无新增信息!</div>
+            </div>
+        </div>
+    </div>
+    <!--右侧图表-->
+    <div class="main-right fl">
+        <!--来源分布-->
+        <div class="main-item clearfix">
+            <div class="title">
+                <span class="left-line-t"></span>
+                <h3>来源分布</h3>
+            </div>
+            <div class="source">
+                <ul>
+                    <li>
+                        <select name="" id="source">
+                            <option value="REFER" selected>来源网站</option>
+                            <option value="TYPE" >来源类型</option>
+                        </select>&emsp;
+                        <label for="timday" style="display: inline-block">
+                            <input type="radio" name="time" id="timday" value="day"/>&nbsp;今日&emsp;
+                        </label>
+                        <label for="timweek" style="display: inline-block">
+                            <input type="radio" name="time" id="timweek" value="week" checked/>&nbsp;近7日&emsp;
+                        </label>
+                        <label for="timmonth" style="display: inline-block">
+                            <input type="radio" name="time" id="timmonth" value="month"/>&nbsp;近30日
+                        </label>
+                        <span class="refer-con">展示指标：PV（页面浏览次数）</span>
+                    </li>
+                </ul>
+                <div id="volume_per"></div>
+                <div class="data_none">该时间段内无新增信息!</div>
+            </div>
+        </div>
+        <!--事件触发-->
+        <div class="main-item clearfix">
+            <div class="title">
+                <span class="left-line-t"></span>
+                <h3>事件触发</h3>
+            </div>
+            <div class="brand_event item-open haha">
+                <table id="event_display"></table>
+                <div class="data_none">该时间段内无新增信息!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/common.js"></script>
+<script src="js/echarts.js"></script>
+<script src="js/china.js"></script>
+<script src="js/pandect.js"></script>
+
+
+
+
+

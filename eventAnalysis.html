@@ -1,0 +1,104 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/init.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/eventAnalysis.css">
+<script src="js/getPath.js"></script>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/verificationLogin.js"></script>
+
+<!--条件筛选-->
+<div class="brand_news">
+    <span class="left-line"></span>
+    <div class="select">
+        <ul>
+            <li class="view1">
+                <span>
+                    <b>项目名称:</b>
+                </span>
+                <select name="projectid" id="projectid"></select>
+            </li>
+            <li class="view2">
+                <span>
+                    <b>筛选时间:</b>
+                </span>
+                <input class="laydate-icon" id="startTime" readonly> -
+                <input class="laydate-icon" id="endTime" readonly>
+            </li>
+
+            <li class="view3">
+                <span>
+                    <b>设备类型：</b>
+                </span>
+                <label for="alldev">
+                    <input type="radio" id="alldev" name="device" value="3" checked>&nbsp;全部&nbsp;</label>
+                <label for="pc">
+                    <input type="radio" id="pc" name="device" value="1">&nbsp;PC&nbsp;</label>
+                <label for="mobile">
+                    <input type="radio" id="mobile" name="device" value="2">&nbsp;移动设备&nbsp;</label>&emsp;&emsp;&emsp;
+                <button id="click">确&emsp;定</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<!--图表展示-->
+<div class="main clearfix">
+    <!--右侧图表-->
+    <div class="main-left fl">
+        <!--事件触发-->
+        <div class="main-item clearfix">
+            <span class="left-line-t"></span>
+            <div class="title">
+                <h3>所有页面</h3>
+            </div>
+            <div class="brand_page">
+                <table id="event_display"></table>
+                <div class="data_none">该时间段内无新增信息!</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-right fl">
+        <!--事件触发-->
+        <div class="main-item clearfix">
+            <span class="left-line-t"></span>
+            <div class="title">
+                <h3>变化趋势</h3>
+            </div>
+            <div class="brand_event">
+                <span>纵轴指标：事件触发次数</span>
+                <div id="page_display"></div>
+                <div class="data_none">该时间段内无新增信息!</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- 触发用户分布 -->
+<div class="main clearfix">
+    <div class="main-item clearfix">
+        <span class="left-line-t"></span>
+        <div class="title">
+            <h3>触发事件地域分布</h3>
+        </div>
+        <div class="area">
+            <span class="areaselect">请选择事件：</span>
+            <select id="AllEventName"></select>
+            <span class="areaspan">展示指标：事件触发次数（单位：次）</span>
+            <div id="area_dis"></div>
+            <div class="data_none">该时间段内无新增信息!</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="laydate/laydate.js"></script>
+<script src="js/normaltime.js"></script>
+<script src="js/common.js"></script>
+<script src="js/echarts.js"></script>
+<script src="js/china.js"></script>
+<script src="js/eventAnalysis.js"></script>

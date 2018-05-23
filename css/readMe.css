@@ -1,0 +1,148 @@
+.wrap{
+    height: auto;
+    padding-bottom: 3%;
+}
+.left-line{
+    width: 8px;
+    height: 30px;
+    background-color: #0085ca;
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+p{
+    margin: 15px 6px 6px 0;
+    font-size: 14px;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    /*height: 40px;*/
+    overflow: hidden;
+}
+.subtext{
+    font-size: 15px;
+    color:  #0085ca;
+    display: block;
+}
+.left{
+    float: left;
+    width: 49.5%;
+}
+.right{
+    float: right;
+    width: 49.5%;
+}
+
+/*产品概况*/
+.prototal{
+    height: 540px;
+    padding: 20px 10px 10px 0;
+    box-sizing: border-box;
+}
+/*产品介绍*/
+.proinfo{
+    height: 50px;
+}
+.pinfo{
+    position: relative;
+    left:3%;
+    top:4%;
+}
+
+.proinfo p{
+    width: 92%;
+    position: relative;
+    left:8%;
+}
+
+/*产品功能*/
+.profun{
+    height: 150px;
+    position: relative;
+    left:8%;
+    top:8%;
+    width: 92%;
+}
+.pfun{
+    position: relative;
+    left:-5.3%;
+}
+
+.fun1,.fun2,.fun3,.fun4{
+    height: 150px;
+}
+.fun1 p,.fun2 p,.fun3 p,.fun4 p{
+    width: 55%;
+    /*height: 150px;*/
+    float: left;
+    border-left:1px solid #98d1ef;
+    padding-left: 8px;
+}
+
+.fun1-left,.fun2-left,.fun3-right,.fun4-right{
+    width: 200px;
+    margin-left: -15px;
+    float: left;
+}
+
+/*适用范围*/
+.proscope{
+    height: 50px;
+
+}
+.pscope{
+    width: 100px;
+    position: relative;
+    left:3%;
+    top:4%;
+}
+
+.proscope p{
+    width: 92%;
+    position: relative;
+    left:8%;
+}
+
+/*新手入门*/
+
+.usernew li,.usernew p,.usernew img{
+    position: relative;
+    left:3%;
+    margin-bottom: 10px;
+}
+.usernew li{
+    margin-bottom: 10px;
+}
+
+/*F&A*/
+.qa li{
+    position: relative;
+    left:3%;
+    margin-bottom: 10px;
+}
+.qa p{
+    width: 94.5%;
+    position: relative;
+    left: 2%;
+}
+
+.usernew span,.qa span{
+    font-size: 15px;
+    color:  #0085ca;
+    display: block;
+}
+
+.bcolor{
+    color:  #0085ca;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+

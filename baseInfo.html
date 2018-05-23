@@ -1,0 +1,79 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/init.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/baseInfo.css">
+<script src="js/getPath.js"></script>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/verificationLogin.js"></script>
+
+<!--创建新项目-->
+<div class="main-item clearfix">
+    <div class="brand_news item-open">
+        <h2>基本信息</h2>
+        <ul id="page_views">
+            <li class="bview2">
+                <span><b>项目名称：</b></span><br>
+                <input type="text" id="proname">
+                <span class="nametips"></span>
+            </li>
+            <li class="bview2">
+                <span><b>网站域名：</b></span><br>
+                <input type="text" id="weburl">
+                <span class="urltips"></span>
+            </li>
+            <li class="bview3">
+                <span><b>项目类型：</b></span><br>
+                <select disabled>
+                    <option value="">请选择</option>
+                    <option value="">游戏</option>
+                    <option value="">社交</option>
+                    <option value="">电商</option>
+                    <option value="">工具</option>
+                    <option value="">新闻</option>
+                    <option value="">金融</option>
+                    <option value="">旅游</option>
+                    <option value="">教育</option>
+                </select>
+            </li>
+            <li class="bview4">
+                <span><b>创建日期：</b></span><br>
+                <span><input type="date" value="" disabled id="createtime"></span></span>
+            </li>
+            <li class="bview5">
+                <span><b>项目代码：</b></span><br>
+                <span>
+                    <div id="pid" disabled>
+                        每个页面导入<br>
+                        &lt;script src="https://stock.511860.com/magic_wand/toWebSite?<br>
+                        appid=<span id="keyword" value="">项目ID</span>&vn=MSB&vc=5.0.0"&gt;<br>
+                        &lt;/script&gt;
+                    </div>
+                    <button><a href="#" id="pcode">复制代码</a></button>
+                </span>
+            </li>
+            <li class="bview4">
+                <span><b>事件代码：</b></span><br>
+                <span>
+                    <input type="text" id="eid" value="MSBApp.onEvent (EventId，Label，MapKv);" disabled>
+                    <button><a href="#" id="ecode">复制代码</a></button>
+                </span>
+
+            </li>
+        </ul>
+        <button id="savepro">保存</button>
+        <button id="backpro">返回</button>
+    </div>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/baseInfo.js"></script>
+<script src="js/jquery.zclip.min.js"></script>
+<script src="layer/layer.js"></script>
+
+
+
+
+
+
+
+

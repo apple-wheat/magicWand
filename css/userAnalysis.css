@@ -1,0 +1,127 @@
+.left-line{
+    width: 8px;
+    height: 30px;
+    background-color: #0085ca;
+    position: absolute;
+    top: 10px;
+    left: 13px;
+}
+.left-line-t{
+    width: 8px;
+    height: 30px;
+    background-color: #0085ca;
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+.area {
+    background: #fff;
+    width: 100%;
+    float: left;
+    height: 265px;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 100;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.area span,.visit span{
+    margin-left: 3%;
+    margin-top: 0.5%;
+    font-size: 12px;
+    color: #0085ca;
+}
+.brand_total span{
+    margin-left: 1.5%;
+    margin-top: 0.5%;
+    font-size: 12px;
+    color: #0085ca;
+ }
+
+.area > ul {
+    overflow: hidden;
+    margin-left: 70%;
+    margin-top: 2%;
+}
+
+.visit {
+    height: 265px;
+}
+
+.talign{
+    text-align: left;
+}
+#area_dis,#visitor{
+    width: 100%;
+    height: 245px;
+}
+
+/*来源类型*/
+#page_views {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 32px;
+    font-size: 18px;
+    border-collapse: collapse;
+}
+
+#page_views thead {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+#page_views thead th {
+    color: #18202b;
+    font-weight: 400;
+}
+
+#page_views tbody tr {
+    color: #18202b;
+}
+
+#page_views tbody tr td {
+    font-size: 14px;
+}
+
+#page_views tbody tr td a {
+    color: #18202b;
+}
+
+.brand_total{
+    width: 100%;
+    height: 285px;
+}
+#usertime{
+    width: 100%;
+    height: 245px;
+}
+
+/*趋势图*/
+.brand_total .data_none{
+    text-align: center;
+    height: 245px;
+    line-height: 245px;
+    margin-top: -245px;
+}
+.area .data_none{
+    height: 245px;
+    line-height: 245px;
+    margin-top: -245px;
+    text-align: center;
+}
+.visit .data_none{
+    height: 245px;
+    line-height: 245px;
+    margin-top: -245px;
+    text-align: center;
+}
+
+.brand_news{
+    position: relative;
+    width: 99.7%;
+}
+

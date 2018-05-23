@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1" />
+<title>添加用户</title>
+
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/getPath.js"></script>
+<script type="text/javascript">
+	var MSBModel = {
+		menus : [],
+		projects : [],
+		auth : ['read','create','update','delete','export','issued'],
+		getMenus : function (){
+			var m = {};
+			$.each(MSBModel.menus,function(index,item){
+				var mid = item['mid'];
+				var h = {};
+				$.each(MSBModel.auth,function(index1,item1){
+					var x = $("input[name='"+ item1+ "_" +mid+"']").is(':checked') ? '0' : '1';
+					h[item1] = x;
+				})
+				m[mid] = h;
+			})
+			return m;
+		},
+		getProject : function(){
+			var p = [];
+			$("input[name='project']:checked").each(function(index,item){
+				p.push($(this).attr('value'));
+			})
+			return p;
+		},
+		submitUser : function(){
+			var m = MSBModel.getMenus();
+			var p = MSBModel.getProject();
+ 			$.ajax({
+				type : 'post',
+				url : path + "/author/ad/addUser",
+				data : {
+					menu : JSON.stringify(m),
+					project : JSON.stringify(p),
+					name : $("input[name='name']").val(),
+					pwd : $("input[name='pwd']").val(),
+					type : $("#type").val(),
+					email : $("input[name='email']").val(),
+					qq : $("input[name='qq']").val(),
+					contactor : $("input[name='contactor']").val(),
+					phone : $("input[name='phone']").val(),
+					ename : $("input[name='ename']").val()
+				},
+				xhrFields : {
+					withCredentials : true
+				},
+				crossDomain : true,
+				success : function(data) {
+					alert("添加用户成功");
+				}
+			})  
+		},
+		//获取menu和project
+		dataAction : function(){
+			$.ajax({
+				type : 'post',
+				url : path + "/author/ad/menus",
+				data : {},
+				xhrFields : {
+					withCredentials : true
+				},
+				crossDomain : true,
+				success : function(data) {
+					data = data.data;
+					MSBModel.menus = data.menus;
+					MSBModel.projects = data.projects;
+					MSBModel.menuManager();
+					MSBModel.projectManager();
+				},
+				error : function(data) {
+				}
+			})
+		},
+		//展示menus
+		menuManager : function(){
+			$.each(MSBModel.menus,	function(index, item) {
+				var name = item['name'];
+				var mid = item['mid'];
+				var tr = "<tr><th>"	+ name + "</th>"
+						+ "<td><input type='checkbox' name='read_"+mid+"' checked></td>"
+						+ "<td><input type='checkbox' name='create_"+mid+"' checked></td>"
+						+ "<td><input type='checkbox' name='update_"+mid+"' checked></td>"
+						+ "<td><input type='checkbox' name='delete_"+mid+"' checked></td>"
+						+ "<td><input type='checkbox' name='export_"+mid+"' checked></td>" 
+						+ "<td><input type='checkbox' name='issued_"+mid+"' checked></td>"
+/* 									+ "<td><input type='checkbox' name='"+mid+"_' checked></td>" */
+						+ "</tr>";
+				$("#auther").append(tr);
+			})
+		},
+		//展示project
+		projectManager : function(){
+			$.each(MSBModel.projects,function(index,item){
+				var projectId = item["projectId"];
+				var pname = item['pname'];
+				var r = pname + "<input type='checkbox' name='project' checked value='"+projectId+"'>&nbsp;&nbsp;&nbsp;&nbsp;";
+				$("#project").append(r);
+			})
+		}
+	};
+
+	$(function() {
+		MSBModel.dataAction();
+	})
+	
+</script>
+
+</head>
+<body>
+<form action="" method="post">
+	<div>
+		用户名：<input type="text" name="name" />
+	</div>
+	<div>
+		密码：<input type="password" name="pwd" />
+	</div>
+	<div>
+		类型：<select name="type" id="type">
+			<option value="1" selected>普通用户</option>
+			<option value="0">管理员</option>
+		</select>
+	</div>
+	<div>Email：<input type="text" name="email"></div>
+	<div>QQ：<input type="text" name="qq"></div>
+	<div>联系人：<input type="text" name="contactor"></div>
+	<div>电话：<input type="text" name="phone"></div>
+	<div>公司名称：<input type="text" name="ename"></div>
+		权限： <br />
+	<div>
+		<table border="1" id="auther">
+			<tr>
+				<th></th>
+				<th>查看</th>
+				<th>创建</th>
+				<th>修改</th>
+				<th>删除</th>
+				<th>下载</th>
+				<th>上传</th>
+<!-- 				<th>全选</th> -->
+			</tr>
+		</table>
+	</div>
+	项目：
+	<div id="project">
+		
+	</div>
+	<div>
+		<input type="button" value="提交" onclick="MSBModel.submitUser();">
+	</div>
+</form>
+
+</body>
+
+</html>

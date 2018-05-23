@@ -1,0 +1,133 @@
+.brand_news{
+    position:relative;
+    width:100%;
+}
+.brand_url{
+    position:relative;
+    width:99.2%;
+    height: 245px;
+    cursor: pointer;
+ }
+
+.main-total {
+    height: 310px;
+    margin: 8px 4px 0 12px;
+    background-color: #fff;
+}
+
+.main-total .title {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+.main-total .title h3 {
+    font-size: 15px;
+    color: #0085ca;
+    font-weight: 600;
+    line-height: 40px;
+    padding-left: 20px;
+    float: left;
+}
+.left-line{
+    width: 8px;
+    height: 30px;
+    background-color: #0085ca;
+    position: absolute;
+    top: 10px;
+    left:13px;
+}
+
+.left-line-t{
+    width: 8px;
+    height: 30px;
+    background-color: #0085ca;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+}
+#page_num,#page_url {
+    width: 96%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #374246;
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+
+#page_num thead,#page_url thead {
+    height: 40px;
+    line-height: 40px;
+    background-color: #0085ca;
+    color: #fff;
+}
+
+#page_num thead th,#page_url thead th{
+    text-align: center;
+    cursor: pointer;
+    border-right: 1px solid  #98d1ef;
+    font-weight: 400;
+}
+#page_num tbody tr td,#page_url tbody tr td {
+    font-size: 14px;
+    border: 1px solid #98d1ef;
+    height: 40px;
+    line-height: 40px;
+}
+
+#page_url tbody td a{
+    color: black;
+}
+
+#page_url tbody tr td a:hover{
+    color:cornflowerblue;
+}
+
+/*#page_num thead th:nth-of-type(5),#page_url thead th:nth-of-type(6){*/
+    /*border-right: 1px solid  #98d1ef;*/
+/*}*/
+
+#pdemo{
+    width: 220px;
+    height: 20px;
+    text-align: left;
+    line-height: 20px;
+    font-size: 18px;
+    padding-top: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.page_num-no .data_none{
+    text-align: center;
+    height: 65px;
+    line-height: 65px;
+}
+.page_url-no .data_none{
+    text-align: center;
+    height: 250px;
+    line-height: 250px;
+}
+
+.right{
+    text-align: right;
+    padding-right: 15px;
+    padding-right: 15px;
+}
+.left{
+    text-align: left;
+    padding-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

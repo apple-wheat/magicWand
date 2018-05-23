@@ -1,0 +1,189 @@
+
+/*添加新项目*/
+.brand_news {
+    position: relative;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+#page_views {
+    width: 100%;
+    /*height: 700px;*/
+    height: auto;
+    line-height: 32px;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+}
+.addsearch{
+    position: relative;
+    margin: 0 30px 30px;
+}
+#page_views a{
+    width: 130px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #98d1ef;
+    background: #fff;
+    display: block;
+    color: #0085ca;
+    position: relative;
+    top:15px;
+}
+#page_views a img{
+    margin-top: -5px;
+}
+#page_views a img,#page_views a span{
+    padding-left: 8px;
+}
+
+.addpro{
+    width: 25px;
+    height: 25px;
+    margin-left: -19px;
+    border: none;
+    margin-top: -3px;
+}
+
+.search{
+    width: 280px;
+    height: 30px;
+    border: 1px solid #98d1ef;
+    font-size: 14px;
+    position: relative;
+    left: 832px;
+    top: -15px;
+    padding-left: 10px;
+    background-color: #fff;
+}
+.search:focus{
+    border: 1px solid #98d1ef;
+}
+.serimg{
+    width: 17px;
+    height: 18px;
+    position: relative;
+    left: 800px;
+    top: -15px;
+}
+
+#proinfo{
+    width: 95%;
+    margin-top: -35px;
+    margin-left: 27px;
+    line-height: 30px;
+    font-size: 14px;
+    border: 1px solid #98d1ef;
+    color: #374246;
+}
+
+#proinfo thead {
+    height: 40px;
+    line-height: 40px;
+    background-color: #0085ca;
+    color: #fff;
+    text-align: center;
+}
+.protr td{
+    border-right: 1px solid  #98d1ef;;
+}
+#proinfo thead th:nth-of-type(1){
+    background-color:#d8f7ff;
+}
+/*#usersave thead th:nth-of-type(6){*/
+    /*border-right: 1px solid  #98d1ef;*/
+/*}*/
+
+#proinfo tbody tr td {
+    font-size: 14px;
+    border: 1px solid #98d1ef;
+    color: #374246;
+}
+
+#proinfo tbody tr {
+    height:38px;
+    line-height:38px;
+}
+.active{
+    color: #fff;
+    width: 70%;
+    background: -webkit-linear-gradient(left,#94dced,#2dbadb); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right,#94dced,#2dbadb); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right,#94dced,#2dbadb); /* Firefox 3.6 - 15 */
+    background: linear-gradient(right,#94dced,#2dbadb);
+}
+.protd td:first-child{
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.protd td:last-child{
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+.protd td:nth-child(2),.protd td:nth-child(3),.protd td:nth-child(4){
+    text-align: right;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    padding-right: 10px;
+}
+
+
+#proinfo img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 8px;
+    border: none;
+}
+
+.proimg{
+    position: relative;
+    top: 2px;
+}
+.proedit{
+    position: relative;
+    top: 2px;
+}
+
+.tdinput{
+    width: 500px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #5CA8E3;
+    text-align: left;
+    border: none;
+    letter-spacing: 1.5px;
+}
+
+input::-webkit-input-placeholder {
+    color:#0085ca;
+}
+
+/*火狐浏览器记得设置opacity的值*/
+input:-moz-placeholder{
+    color:#0085ca;
+    opacity: 1;
+}
+input::-moz-placeholder{
+    color:#0085ca;
+    opacity: 1;
+}
+input:-ms-input-placeholder{
+    color:#a0cde8;
+}
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0px 1000px #e7f8fa inset;
+}
+
+
+
+
+
+
+
+
+
+

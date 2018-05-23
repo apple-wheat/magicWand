@@ -1,0 +1,149 @@
+.left-line{
+    width: 8px;
+    height: 30px;
+    background-color: #0085ca;
+    position: absolute;
+    top: 10px;
+    left:13px;
+}
+
+.left-line-t{
+    width: 8px;
+    height: 30px;
+    background-color: #0085ca;
+    position: absolute;
+    top: 15px;
+    left: 12px;
+}
+
+.left-line-s{
+    width: 8px;
+    height: 30px;
+    background-color: #0085ca;
+    position: absolute;
+    margin-top: 6px;
+}
+
+.brand_news {
+    position: relative;
+    width: 99.7%;
+}
+
+#page_views {
+    width: 97%;
+    margin: 15px 25px 15px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    height: auto;
+    color: #374246;
+}
+
+#page_views thead {
+    height: 40px;
+    line-height: 40px;
+    background-color: #0085ca;
+    color: #fff;
+    border: 1px solid  #98d1ef;
+}
+#page_views thead th{
+    border-right: 1px solid  #98d1ef;
+    font-weight: 400;
+}
+#page_views thead th:nth-of-type(1){
+    background-color:#d8f7ff;
+}
+/*#page_views thead th:nth-of-type(6){*/
+    /*border-right: 1px solid  #98d1ef;*/
+/*}*/
+#page_views tbody tr td {
+    font-size: 14px;
+    border: 1px solid  #98d1ef;
+}
+
+#page_views tbody tr {
+    height:38px;
+    line-height:38px;
+}
+
+.brand_total,.source{
+    background: #fff;
+    width: 96%;
+    margin: 0 auto;
+    height: auto;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 100;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    margin: 0px 20px 20px 20px;
+}
+
+.brand_total > ul,.source > ul {
+    overflow: hidden;
+}
+.soutype >ul {
+    overflow: hidden;
+    margin-left: 1.5%;
+ }
+
+.brand_total ul select,.source ul select,.soutype select{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url(../images/icon_list2.png) no-repeat 123px -3px;
+    width: 160px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #98d1ef;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.brand_total span,.source span,.soutype span{
+    margin-left: 3%;
+    /*margin-top: 1.5%;*/
+    font-size: 12px;
+    color: #0085ca;
+}
+.brand_total label,.source label{
+    font-size: 14px;
+}
+
+#volume-content,#volume_per {
+    height: 245px;
+}
+
+.right{
+    text-align: right;
+    padding-right: 15px;
+}
+.left{
+    text-align: left;
+    padding-left: 15px;
+}
+
+.source .data_none,.brand_total .data_none{
+    height:245px;
+    line-height:245px;
+    text-align:center;
+}
+.soutype .data_none{
+    height:300px;
+    line-height: 300px;
+    text-align: center;
+}
+
+@media screen and (min-width:900px) and (max-width:1460px){
+    .brand_total ul select,.source ul select{
+        background: url(../images/icon_list2.png) no-repeat 88px -3px;
+        width: 125px;
+    }
+}
+
+
+
+
+

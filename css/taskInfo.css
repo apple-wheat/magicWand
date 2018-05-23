@@ -1,0 +1,95 @@
+/*当前访问人数*/
+.brand_news {
+    position: relative;
+    height: 850px;
+}
+.brand_news button{
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    background-color:  #0085ca;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    left: 35%;
+    margin-top: 3%;
+    margin-left: -16%;
+}
+.brand_news button:hover{
+    border: 1px solid #98d1ef;
+    background-color: white;
+    color: #0085ca;
+}
+h2{
+    color:  #0085ca;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: -8%;
+    margin-left: -53%;
+}
+b{
+    font-size: 16px;
+    color:  #0085ca;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 400;
+}
+#page_views {
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.bview1{
+    font-size: 20px;
+}
+
+.bview1,.bview2{
+    font-size: 14px;
+    margin-top: 15px;
+}
+.bview1 input{
+    width: 330px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid  #98d1ef;
+    padding-left: 8px;
+    margin-top: 8px;
+}
+.bview2 input{
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid  #98d1ef;
+    padding-left: 8px;
+    white-space:nowrap;/*禁止换行,为text-overflow作准备*/
+    overflow:hidden; /*禁止文本溢出显示,为text-overflow作准备*/
+    text-overflow:ellipsis;/*兼容 ie Safari (Webkit)*/
+    -o-text-overflow:ellipsis;/*兼容Ｏpera*/
+    word-break:break-all;
+}
+
+/*#area_more{*/
+    /*!*display: none;*!*/
+    /*width: 400px;*/
+    /*height: 62px;*/
+    /*line-height: 30px;*/
+    /*border: 1px solid  #98d1ef;*/
+    /*padding-left: 8px;*/
+    /*word-wrap:break-word;*/
+/*}*/
+
+#area_more {
+    display: inline-block;
+    /*width: 100%;*/
+    vertical-align: middle;
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid  #98d1ef;
+    padding-left: 8px;
+}
+
+
+

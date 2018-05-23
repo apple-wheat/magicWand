@@ -1,0 +1,302 @@
+.brand_news {
+    position: relative;
+    height:220px;
+    cursor: pointer;
+    clear: both;
+}
+
+#page_views {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    border: 1px solid #98d1ef;
+    color: #374246;
+}
+
+#page_views thead {
+    height: 40px;
+    line-height: 40px;
+    background-color: #0085ca;
+    color: #fff;
+}
+#page_views thead th,#page_display thead th, #event_display thead th{
+    border-right: 1px solid  #98d1ef;
+    font-weight: 400;
+}
+#page_views thead th:nth-of-type(1){
+    background-color:#daf2ff;
+}
+
+#page_views tbody tr td {
+    font-size: 14px;
+    width: 15%;
+    border: 1px solid #98d1ef;
+}
+
+#page_views tbody tr {
+    height:38px;
+    line-height:38px;
+}
+
+
+.brand_total {
+    background: #fff;
+    width: 98%;
+    height: 275px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 100;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    margin: 5px 20px 20px 20px;
+}
+
+.brand_total > ul {
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.brand_total ul select,#select select{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:button;
+    background: url(../images/icon_list2.png) no-repeat 242px -3px;
+    width: 280px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    border: 1px solid #98d1ef;
+    margin-right: 20px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.brand_total span,.source span{
+    font-size: 12px;
+    color: #0085ca;
+}
+
+.totaltime,.area span{
+    font-size: 12px;
+    color: #0085ca;
+}
+.area-con,.refer-con{
+    margin-left:20px;
+}
+#volume-content,#usertime{
+    width: 100%;
+    height: 245px;
+}
+
+.source{
+    background: #fff;
+    width: 100%;
+    height: 349px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 100;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.area {
+    background: #fff;
+    width: 100%;
+    height: 350px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 100;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.brand_event {
+    background: #fff;
+    width: 96%;
+    height: 253px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 100;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.source ul select{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:button;
+    background: url(../images/icon_list2.png) no-repeat 123px -3px;
+    width: 160px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #98d1ef;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.area > ul,.source > ul {
+    overflow: hidden;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+#volume_per{
+    height: 300px;
+}
+
+.item-open {
+    margin: 0 2%;
+}
+
+#event_display {
+    margin-top: 6px;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    border: 1px solid #98d1ef;
+}
+.item-top{
+    margin:-6px 2%;
+}
+#page_display{
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    border: 1px solid #98d1ef;
+}
+#page_display thead, #event_display thead{
+    text-align: center;
+    background-color: #0085ca;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+
+#page_display tbody tr, #event_display tbody tr {
+    height: 38px;
+    text-align: center;
+}
+
+#page_display tbody td, #event_display tbody td {
+    font-size: 14px;
+    border: 1px solid #98d1ef;
+}
+#event_display tbody td {
+    height: 38px;
+    line-height: 38px;
+}
+#page_display tbody td a{
+    color: black;
+    width: 325px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+#page_display tbody td a:hover{
+    color: cornflowerblue;
+}
+.haha{
+    margin-top: -6px;
+    height: 259px;
+}
+
+.demo {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.page,.event{
+    margin-left: 10px;
+}
+
+
+#area_dis {
+    height: 309px;
+}
+#useday{
+    margin-left: 3%;
+    margin-top: 1.5%;
+}
+
+.left-line{
+    width: 8px;
+    height: 30px;
+    background-color: #0085ca;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+.left-line-t{
+    width: 8px;
+    height: 30px;
+    background-color: #0085ca;
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.right{
+    text-align: right;
+    padding-right: 15px;
+}
+.left{
+    text-align: left;
+    padding-left: 15px;
+}
+
+/*暂无信息*/
+/*趋势图/使用时段分布*/
+.brand_total .data_none{
+    height: 245px;
+    line-height: 245px;
+    text-align: center;
+    /* margin-top: -245px; */
+}
+.brand_total .data_none2{
+    height: 245px;
+    line-height: 245px;
+    text-align: center;
+}
+/*页面访问/事件触发*/
+.brand_event .data_none{
+    height: 250px;
+    line-height: 250px;
+    text-align: center;
+}
+/*来源分布*/
+.source .data_none,.area .data_none{
+    height: 339px;
+    line-height: 339px;
+    text-align: center;
+}
+/*今日流量*/
+.brand_news .data_none{
+    height: 220px;
+    line-height: 220px;
+    text-align: center;
+}
+
+@media screen and (min-width:900px) and (max-width:1460px){
+    .source ul select{
+        background: url(../images/icon_list2.png) no-repeat 88px -3px;
+        width: 125px;
+    }
+}
+
+
+

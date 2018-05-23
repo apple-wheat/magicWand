@@ -1,0 +1,79 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/init.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/pageAnalysis.css">
+<script src="js/getPath.js"></script>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/verificationLogin.js"></script>
+
+
+<!--条件筛选-->
+<div class="brand_news">
+    <span class="left-line"></span>
+    <div class="select">
+        <ul>
+            <li class="view1">
+                <span><b>项目名称:</b></span>
+                <select name="projectid" id="projectid" class="select-n"></select>
+            </li>
+            <li class="view2">
+                <span><b>筛选时间:</b></span>
+                <input class="laydate-icon" id="startTime" readonly> - <input class="laydate-icon" id="endTime" readonly>
+            </li>
+            <li class="view3">
+                <span><b>来源渠道:</b></span>
+                <select id="channel"></select>
+            </li>
+            <li class="view4">
+                <span><b>设备类型：</b></span>
+                <label for="alldev"><input type="radio" id="alldev" name="device" value="3" checked>&nbsp;全部&nbsp;</label>
+                <label for="pc"><input type="radio" id="pc" name="device" value="1">&nbsp;PC&nbsp;</label>
+                <label for="mobile"><input type="radio" id="mobile"name="device" value="2">&nbsp;移动设备&nbsp;</label>&emsp;&emsp;&emsp;
+                <button id="click">确&emsp;定</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="main clearfix">
+    <!--包含页面数-->
+    <div class="main-item clearfix">
+        <div class="title">
+            <span class="left-line-t"></span>
+            <h3>总体指标</h3>
+        </div>
+        <div class="brand_news item-open page_num-no">
+            <table id="page_num"></table>
+            <div class="data_none">该时间段内无新增信息！</div>
+        </div>
+    </div>
+
+    <!--页面地址-->
+    <div class="main-total clearfix">
+        <div class="title">
+            <span class="left-line-t"></span>
+            <h3>页面详情</h3>
+        </div>
+        <div class="brand_url item-open page_url-no">
+            <table id="page_url"></table>
+            <div class="data_none">该时间段内无新增信息！</div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="laydate/laydate.js"></script>
+<script src="js/normaltime.js"></script>
+<script src="js/common.js"></script>
+<script src="js/echarts.js"></script>
+<script src="js/pageAnalysis.js"></script>
+
+
+
+
+
+
+
+
+

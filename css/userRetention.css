@@ -1,0 +1,119 @@
+.left-line{
+    width: 8px;
+    height: 30px;
+    background-color: #0085ca;
+    position: absolute;
+    top: 10px;
+    left:13px;
+}
+
+.left-line-t{
+    width: 8px;
+    height: 30px;
+    background-color: #0085ca;
+    position: relative;
+    top: 6px;
+    left: -119px;
+}
+/*用户留存*/
+#usersave{
+    width: 96%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #98d1ef;
+    color: #374246;
+}
+
+#usersave thead tr:nth-child(1) {
+    height: 40px;
+    line-height: 40px;
+    background-color: #0085ca;
+    color: #fff;
+    font-size: 14px;
+}
+
+#usersave thead th{
+    border-right: 1px solid  #98d1ef;
+    width: 10%;
+    font-weight: 400;
+}
+
+#usersave thead th:nth-of-type(8){
+    border-right: 1px solid  #98d1ef;
+}
+
+#usersave thead tr,#usersave tbody tr {
+    height:38px;
+    line-height:38px;
+}
+
+#usersave td {
+    font-size: 14px;
+    text-align:center;
+    border: 1px solid #98d1ef;
+}
+
+/*模拟对角线*/
+.usave{
+    border-top:25em #D6D3D6 solid;/*上边框宽度等于表格第一行行高*/
+    border-left:80px #BDBABD solid;/*左边框宽度等于表格第一行第一格宽度*/
+    position:relative;/*让里面的两个子容器绝对定位*/
+    background: -webkit-linear-gradient(169deg, transparent 49.5%, #98d1ef 49.5%, #98d1ef 50.5%, transparent 50.5%);
+    background: -ms-linear-gradient(169deg, transparent 49.5%, #98d1ef 49.5%, #98d1ef 50.5%, transparent 50.5%);
+    background: linear-gradient(170deg, transparent 49.5%, #98d1ef 49.5%, #98d1ef 50.5%, transparent 50.5%);
+    background: -moz-linear-gradient(100deg, transparent 49.5%, #9feaf4 49.5%, #9feaf4 50.5%, transparent 50.5%);
+    /*background: -moz-linear-gradient(100deg, transparent 49.5%, #98d1ef 49.5%, #98d1ef 50.5%, transparent 50.5%);*/
+}
+#usersave b{
+    font-style: normal;
+    display: block;
+    position: absolute;
+    top: -0.3em;
+    left: 1.5em;
+}
+#usersave em{
+    font-style:normal;
+    display:block;
+    position:absolute;
+    top: 0.5em;
+    left: 6em;
+    width:80px;
+}
+
+
+.brand_total{
+    position: relative;
+    cursor: pointer;
+    height:340px;
+}
+
+.brand_news{
+    position: relative;
+    width: 99.7%;
+}
+/*趋势图*/
+.brand_total .data_none{
+    text-align: center;
+    height: 245px;
+    line-height: 245px;
+    float: left;
+    width: 100%;
+    margin-top: -50px;
+}
+
+/*screen是以iframe的宽度为标准的*/
+@media screen and (min-width:900px) and (max-width:1500px){
+    .usave{
+        position:relative;/*让里面的两个子容器绝对定位*/
+        background: -webkit-linear-gradient(167deg, transparent 49.5%, #98d1ef 49.5%, #98d1ef 50.5%, transparent 50.5%);
+        background: -ms-linear-gradient(167deg, transparent 49.5%, #98d1ef 49.5%, #98d1ef 50.5%, transparent 50.5%);
+        background: linear-gradient(167deg, transparent 49.5%, #98d1ef 49.5%, #98d1ef 50.5%, transparent 50.5%);
+        background: -moz-linear-gradient(105deg, transparent 49.5%, #9feaf4 49.5%, #9feaf4 50.5%, transparent 50.5%);
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1700px){
+    .usave{
+        background: -moz-linear-gradient(101deg, transparent 49.5%, #9feaf4 49.5%, #9feaf4 50.5%, transparent 50.5%);
+    }
+}

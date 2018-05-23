@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/>
+    <title>魔数棒</title>
+
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="styleheet" href="css/pandect.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/getPath.js"></script>
+    <script src="js/verificationLogin.js"></script>
+</head>
+<body style="min-width:1300px;">
+
+<!--导航栏未收缩状态-->
+<div class="page-nav" id="navin">
+    <div id="page-navin" class="page-navin">
+        <!--头部logo-->
+        <div class="header-bg">
+            <div class="header" id="form">
+                <img src="images/logobar.png" alt="">
+            </div>
+        </div>
+
+        <!--导航栏内容-->
+        <ul id="demo-list" class="navin">
+            <!--<li class="active" data-order="1"><a class="navin-con" data-href="pandect.html" href="#" data-title="总览"><span class="item01 item001"></span>总览</a></li>-->
+            <!--<li data-order="2"><a class="navin-con" data-href="sourceAnalysis.html" href="#"><span class="item02"></span>来源分析</a></li>-->
+            <!--<li data-order="3"><a class="navin-con" data-href="pageAnalysis.html" href="#"><span class="item03"></span>页面分析</a></li>-->
+            <!--<li data-order="4"><a class="navin-con" data-href="eventAnalysis.html" href="#"><span class="item04"></span>事件分析</a></li>-->
+            <!--<li class="user" data-order="5"><a class="navin-con" data-href="userAnalysis.html" href="#"><span class="item05"></span>用户分析</a>-->
+                <!--<ul class="submenu">-->
+                    <!--<li><span></span><a href="#" data-href="areaAnalysis.html">地域分析</a></li>-->
+                    <!--<li><span></span><a href="#" data-href="userRetention.html">用户留存</a></li>-->
+                    <!--<li><span></span><a href="#" data-href="systemEnvironment.html">系统环境</a></li>-->
+                <!--</ul>-->
+            <!--</li>-->
+            <!--<li class="user" data-order="8"><a class="navin-con" data-href="twoMarketing.html" href="#"><span class="item08"></span>二次营销</a>-->
+                <!--<ul class="submenu">-->
+                    <!--<li><span></span><a href="#" data-href="marketManage.html">营销任务</a></li>-->
+                <!--</ul>-->
+            <!--</li>-->
+            <!--<li data-order="6"><a class="navin-con" href="#" data-href="readMe.html"><span class="item06"></span>说明文档</a></li>-->
+            <!--<li data-order="7"><a class="navin-con" href="#" data-href="projectManage.html"><span class="item07"></span>项目管理</a></li>-->
+        </ul>
+
+        <!--底部设置-->
+        <!--<div class="footer">-->
+            <!--<ul class="setout">-->
+                <!--<li id="set"><b></b><span class="item08"></span>设置</li>-->
+                <!--<li id="logout"><b class="cur"></b><span class="item09"></span>退出</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    </div>
+    <img id="goin" src="images/in.png" alt="收缩">
+</div>
+
+<!--导航栏收缩状态-->
+<div class="page-nav" id="navout">
+    <div id="page-navout" class="page-navout">
+
+        <!--导航栏内容-->
+        <ul id="demo-list2" class="navout">
+            <!--<li class="active" data-order="1"><a class="navout-con" data-href="pandect.html" href="#" data-title="总览"><span class="item01 item001"></span></a></li>-->
+            <!--<li data-order="2"><a class="navout-con" data-href="sourceAnalysis.html" href="#"><span class="item02"></span></a></li>-->
+            <!--<li data-order="3"><a class="navout-con" data-href="pageAnalysis.html" href="#"><span class="item03"></span></a></li>-->
+            <!--<li data-order="4"><a class="navout-con" data-href="eventAnalysis.html" href="#"><span class="item04"></span></a></li>-->
+            <!--<li data-order="5"><a class="navout-con" data-href="userAnalysis.html" href="#"><span class="item05"></span></a></li>-->
+            <!--<li data-order="6"><a class="navout-con" href="#" data-href="readMe.html"><span class="item06"></span></a></li>-->
+            <!--<li data-order="7"><a class="navout-con" href="#" data-href="projectManage.html"><span class="item07"></span></a></li>-->
+        </ul>
+
+        <!--底部设置-->
+        <!--<div class="footer">-->
+            <!--<ul class="setout2">-->
+                <!--<li id="set2"><b></b><span class="item08"></span></li>-->
+                <!--<li id="logout2"><b class="cur"></b><span class="item09"></span></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    </div>
+    <img id="goout" src="images/out.png" alt="展开">
+</div>
+
+
+<!--页面内容-->
+<div class="page-content fr" id="pagecon">
+    <iframe id="content" frameborder="0" scrolling="no" src="pandect.html"   name="iframepage"></iframe>
+    <!-- <iframe id="content" frameborder="0" scrolling="no" src="specificationsExport.html" name="iframepage"></iframe> -->
+    <!--公共弹窗-->
+    <div class="modal">
+        <div class="modal-bg">
+            <img src="images/close.png" alt="">
+            <p>来源分布请求失败!</p>
+            <button id="modaly">确&nbsp;定</button>
+            <button id="modaln">取&nbsp;消</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+<script src="layer/layer.js"></script>
+
+<script>
+//    layer.open({
+//        title: '回车关闭测试',
+//        content: '我是内容',
+//        btn: ['确认','关闭'],
+//        success: function(layero, index){
+//            this.enterEsc = function(event){
+//                if(event.keyCode === 13){
+//                    layer.close(index);
+//                    return false; //阻止系统默认回车事件
+//                }
+//            };
+//            $(document).on('keydown', this.enterEsc);	//监听键盘事件，关闭层
+//        },
+//        end: function(){
+//            $(document).off('keydown', this.enterEsc);	//解除键盘关闭事件
+//        }
+//    });
+
+</script>
+
+</body>
+</html>

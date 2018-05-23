@@ -1,0 +1,339 @@
+.load {
+    margin-left: 13px;
+    background: #fff;
+    padding-left: 6px;
+    font-size: 15px;
+}
+
+.load button {
+    width: 70px;
+    height: 28px;
+    border: none;
+    background-color: #0085ca;
+    color: white;
+    font-size: 14px;
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+.load ul li {
+    height: 30px;
+    position: relative;
+}
+
+.load1 {
+    left: 5px;
+}
+
+.load2 {
+    left: 320px;
+    margin-top: -30px;
+}
+
+.load3 {
+    left: 640px;
+    margin-top: -30px;
+}
+
+.tips {
+    font-size: 12px;
+    color: #0085ca;
+    font-weight: normal;
+}
+
+.load4 {
+    left: 5px;
+    margin-top: -45px;
+}
+
+.load5 {
+    left: 320px;
+    margin-top: -30px;
+}
+
+.load5 button {
+    margin-left: 147px;
+}
+
+.main-item .title h3 {
+    padding-top: 8px;
+    margin-bottom: 30px;
+}
+
+#select {
+    height: 90px;
+}
+
+#select select {
+    appearance: none;
+    -moz-appearance: none;
+    /* -webkit-appearance: none; */
+    -webkit-appearance: button;
+    background: url(../images/icon_list2.png) no-repeat 200px -3px;
+    width: 240px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    border: 1px solid #98d1ef;
+    margin-right: 20px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+#select li:nth-child(3) input {
+    position: relative;
+    border: 1px solid #98d1ef;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 140px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.left-line {
+    width: 8px;
+    height: 30px;
+    background-color: #0085ca;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+
+/*添加新项目*/
+
+.brand_news {
+    position: relative;
+    width: 97%;
+    height: auto;
+    top: -15px;
+    min-height: 770px;
+}
+
+#page_views {
+    width: 99%;
+    height: auto;
+    line-height: 32px;
+    position: relative;
+    margin: 0 30px 20px 35px;
+    overflow-x: scroll;
+    padding-bottom: 5px;
+}
+
+.exportDetail {
+    width: 140px;
+    height: 28px;
+    border: none;
+    background-color: #0085ca;
+    color: white;
+    position: fixed;
+    top: 130px;
+    right: 35px;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 111;
+    letter-spacing: 2px;
+}
+
+.exportNone {
+    cursor: not-allowed;
+}
+
+table {
+    cursor: pointer;
+}
+
+table th {
+    white-space: nowrap;
+}
+
+table td {
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#proinfo {
+    empty-cells: show;
+    border-collapse: collapse;
+    width: 100%;
+    line-height: 30px;
+    font-size: 14px;
+    border: 1px solid #98d1ef;
+    color: #374246;
+}
+
+#proinfo thead {
+    height: 40px;
+    line-height: 40px;
+    background-color: #0085ca;
+    color: #fff;
+    text-align: center;
+}
+
+#proinfo thead tr td {
+    padding: 0 20px;
+    border-right: 1px solid #98d1ef;
+}
+
+#proinfo tbody tr td {
+    max-width: 350px;
+    font-size: 14px;
+    border: 1px solid #98d1ef;
+    color: #374246;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#proinfo tbody tr td a {
+    color: #374246;
+}
+
+#proinfo tbody tr td a:hover {
+    color: #0085ca;
+}
+
+#proinfo tbody tr {
+    height: 38px;
+    line-height: 38px;
+}
+
+.trtip {
+    display: block;
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    margin: 2em auto;
+    position: fixed;
+    top: 50%;
+    left: 45%;
+}
+
+
+/*分页插件*/
+
+.page_div {
+    font-size: 15px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-bottom: 2em;
+    position: fixed;
+    bottom: 30px;
+    left: 20%;
+}
+
+.page_div a {
+    min-width: 30px;
+    height: 28px;
+    border: 1px solid #dce0e0;
+    text-align: center;
+    margin: 0 4px;
+    cursor: pointer;
+    line-height: 28px;
+    color: #666;
+    font-size: 13px;
+    display: inline-block;
+}
+
+#firstPage,
+#lastPage {
+    width: 50px;
+    color: #0085ca;
+    border: 1px solid #0085ca;
+    cursor: pointer;
+    height: 28px;
+    text-align: center;
+    margin: 0 4px;
+    cursor: pointer;
+    line-height: 28px;
+    color: #666;
+    font-size: 13px;
+    display: inline-block;
+}
+
+#prePage,
+#nextPage {
+    width: 70px;
+    color: #0085ca;
+    border: 1px solid #0085ca;
+    cursor: pointer;
+    height: 28px;
+    text-align: center;
+    margin: 0 4px;
+    cursor: pointer;
+    line-height: 28px;
+    color: #666;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.page_div .current {
+    background-color: #0085ca;
+    border-color: #98d1ef;
+    color: #fff;
+}
+
+.totalPages {
+    margin: 0 10px;
+}
+
+.totalPages span,
+.totalSize span {
+    color: #0085ca;
+    margin: 0 5px;
+}
+
+
+/*浏览器兼容*/
+
+input::-webkit-input-placeholder {
+    color: #0085ca;
+}
+
+
+/*火狐浏览器记得设置opacity的值*/
+
+input:-moz-placeholder {
+    color: #0085ca;
+    opacity: 1;
+}
+
+input::-moz-placeholder {
+    color: #0085ca;
+    opacity: 1;
+}
+
+input:-ms-input-placeholder {
+    color: #0085ca;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #0085ca inset;
+}
+
+
+/*滚动条样式*/
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 10px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 10px rgba(152, 209, 239, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px rgba(152, 209, 239, 0.2);
+    border-radius: 0;
+    background: rgba(152, 209, 239, 0.1);
+}
